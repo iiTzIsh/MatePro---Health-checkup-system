@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+
+:root{
+
+  --black:#2c3e50;
+  --white:#fff;
+  --border:.1rem solid rgba(0,0,0,.2);
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+}
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #eee;
+  padding-left: 30rem;
+}
+
+
+section{
+  padding:2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header{
+  position: sticky;
+  top:0; left:0; right: 0;
+  background-color: var(--white);
+  z-index: 1000;
+  border-bottom: var(--border);
+}
+
+.header .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.header .flex .logo{
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight:bolder;
+  
+}
+
+
+.header .flex .search-form{
+  width: 50rem;
+  border-radius: .5rem;
+  background-color: #eee;
+  padding:1.5rem 2rem;
+  display: flex;
+ 
+
+}
+
+.header .flex .search-form input{
+  width: 100%;
+  font-size: 1.8rem;
+  color:var(--black);
+  background:none;
+}
+
+.header .flex .search-form button{
+  background:none;
+  font-size: 2rem;
+  cursor: pointer;
+  color:var(--black);
+}
+
+
+.header .flex .icons div{
+  font-size: 2rem;
+  color:var(--black);
+  background-color: #eee;
+  border-radius: .5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  cursor: pointer;
+  text-align: center;
+  margin-left: .7rem;
+}
+
+.header .flex .icons div:hover{
+  background-color: var(--black);
+  color:var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+.side-bar{
+  position: fixed;
+  top: 0; left: 0;
+  width: 30rem;
+  background-color: var(--white);
+  height: 100vh;
+  border-right: var(--border);
+  z-index: 1200;
+}
+
+.side-bar .profile{
+  padding:3rem 2rem;
+  text-align: center;
+}
+
+
+.side-bar .profile .image{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.side-bar .profile .name{
+  font-size: 2rem;
+  color:var(--black);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.side-bar .profile .role{
+  font-size: 1.8rem;
+  color: #888;
+}
+
+
+.side-bar .navbar a{
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.side-bar .navbar a i{
+  margin-right: 1.5rem;
+  color:#0050d5;
+  transition: .2s linear;
+}
+
+.side-bar .navbar a span{
+  color:#888;
+}
+
+.side-bar .navbar a:hover{
+  background-color: #eee;
+}
+
+.side-bar .navbar a:hover i{
+  margin-right: 2.5rem;
+}
+
+.side-bar.active{
+  left: -30rem;
+}
+
+
+
+.btn{
+   border-radius: .5rem;
+   color:#fff;
+   font-size: 1.8rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   padding:1rem 3rem;
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.btn{
+   display: block;
+   width: 100%;
+   background-color:#0050d5;
+}
+
+.btn:hover{
+   background-color: var(--black);
+   color: var(--white);
+}
+
+
+.logoutbtn{
+  display: block;
+   width: 50%;
+   background-color: #0050d5;
+   border-top-right-radius: .5rem;
+   border-bottom-right-radius: .5rem;
+   cursor: pointer;
+    margin-top: 20rem;
+    color: #fff;
+    height: 3.5rem;
+    align-items: center;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 4.5px;
+}
+
+.logoutbtn:hover{
+  background-color: var(--black);
+   color: var(--white);;
+}
+
+
+.about .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1.5rem;
+}
+
+.about .row .image{
+   flex: 1 1 40rem;
+}
+
+.about .row .image img{
+   width: 70%;
+   height: 70%;
+   padding-left:20px;
+   margin-left: 70px;
+}
+
+.about .row .content{
+   flex: 1 1 40rem;
+}
+
+.about .row .content p{
+   font-size: 1.7rem;
+   line-height: 2;
+   color: #888;
+   padding: 1rem 0;
+}
+
+.about .row .content h3{
+   font-size: 3rem;
+   color:var(--black);
+   text-transform: capitalize;
+}
+
+.about .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+   margin-top: 3rem;
+}
+
+.about .box-container .box{
+   border-radius: .5rem;
+   background-color: var(--white);
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+   gap: 2.5rem;
+}
+
+.about .box-container .box i{
+   font-size: 4rem;
+   color: #0050d5;
+}
+
+.about .box-container .box h3{
+   font-size: 2.5rem;
+   color: var(--black);
+   margin-bottom: .3rem;
+}
+
+.about .box-container .box p{
+   font-size: 1.7rem;
+   color:#888;
+}
+
+

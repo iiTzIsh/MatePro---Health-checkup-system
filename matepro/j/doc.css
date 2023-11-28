@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+  }
+
+
+
+  .container ,.doctor-card{
+    margin-left: 20px;
+  }
+  
+  .doctor-card {
+    background-color:lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px lightgray;
+  }
+  
+  
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .info, .contact, .diet-plan {
+    margin-bottom: 20px;
+  }
+  
+  .info h2, .contact h2, .diet-plan h2 {
+    margin-bottom: 10px;
+  }
+  
+  .diet-plan p {
+    margin: 5px 0;
+  }

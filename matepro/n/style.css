@@ -1,0 +1,81 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #2d79e3;
+    color: #040000;
+    text-align: center;
+    padding: 10px;
+}
+
+.innerheader {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the main content */
+.main {
+    text-align: center;
+    padding: 20px;
+}
+
+.diet-button {
+    background-color: #2d79e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the form container */
+.content-box {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #2d79e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2d79e3;
+}

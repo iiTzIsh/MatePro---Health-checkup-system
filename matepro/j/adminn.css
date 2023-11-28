@@ -1,0 +1,78 @@
+.another-div{
+    display:flex;
+}
+.another-div ,.health{
+    justify-content: center; 
+    margin-right: 180px;
+}
+
+.another-div ,.admin{
+    margin-right: 370px;
+}
+button{
+    background-color:black;
+    color: black;
+    border-style: none;
+    border-radius: 15px;
+    font-size: larger;
+}
+.cotainer{
+    padding-left: auto;
+    margin-top: 0;
+}
+nav{
+    margin: 50px 0;
+    background-color: lightblue;
+}
+nav ul{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 80px;
+    font-weight: 700;
+    font-size: larger;
+}
+nav a{
+    display: block;
+    padding:0 10px;
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+nav ul li:hover > ul{
+    display: inherit;
+    padding:10px;
+
+}
+
+.logout-button{
+    width: 70px;
+    height: 50px;
+    background-color:lightblue;
+    border-style: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logout-button a{
+    text-decoration: none;
+}
+.session{
+    text-align: center;
+}
+
+
+
